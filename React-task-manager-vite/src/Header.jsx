@@ -55,14 +55,14 @@ export default function Header() {
         {/* Header that takes Input and adds tasks */}
             <article>
                 <input type="text"
-                    className='input'
+                    className='input bg-white'
                     placeholder='Add a task'
                     value={taskName}
                     onChange={(e) => setTaskName(e.target.value)}
                 />
 
                 {/* 5.1 ❖ Implement event handling for adding a new to-do item. (10 marks) */}
-                <button className='btn-primary bg-fuchsia-600' onClick={handleClick}>Add</button>
+                <button className='btn-primary bg-fuchsia-600 text-lg border-4 border-purple-400' onClick={handleClick}>Add</button>
             </article>
             
             {/* ToDoList that displays tasks */}

@@ -6,7 +6,7 @@ export default function ToDoItem({item, handleCompleted, handleEdit, handleDelet
     return (
 
         // ToDoItem tag that displays task
-        <article className={cn('todo-item', item.isCompleted===false? 'bg-yellow-100' : 'bg-green-200')}>
+        <article className={cn('todo-item', item.isCompleted===false? 'bg-red-300' : 'bg-green-200')}>
             <h3 className='text-xl font-bold mx-4'>{item.taskName}</h3>
 
 
